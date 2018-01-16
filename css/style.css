@@ -1,0 +1,152 @@
+/*ADDED "SUPPORT TICKET PAGE" CSS BELOW*/
+
+/*
+extraSlice Colors
+
+Hex codes:
+e_blue		28485E
+e_lightblue	268CA0
+e_green		76B548
+black		000000
+white		FFFFFF
+*/
+body {
+	padding: 2em;
+	background: #28485E;
+	font-family: monospace;
+}
+
+.ticket {
+	color: #28485E;
+	background: #FFFFFF;
+	width:100%;
+	font-size: 20px;
+	align-content: center;
+	text-align: center;
+	padding: 10px;
+	
+}
+.ticket h1 {
+	color: #28485E;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	font-size: 30px;
+}
+.ticket h2 {
+	color: #28485E;
+	font-size: 20px;
+	padding-top: 1em;
+}
+.ticket img {
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+	width:100px;
+	padding-top: 1em;
+}
+
+#container {
+	width: 75%;
+	margin: auto;
+}
+
+.ticket-form {
+	margin: 5px;
+	padding 5px;
+	box-shadow: none;
+	background: transparent;
+	border: 1px solid #757575;
+	height: 54px;
+	font-size: 18px;
+	font-weight: 300;
+	width: 100%;
+}
+.ticket-form.description {
+	height: 148px;
+}
+.ticket-form:active, .ticket-form:focus, .ticket-form.description:active, .ticket-form.description:focus {
+	outline: none;
+	box-shadow: none;
+	border: 2px solid  #268CA0;
+	color: #28485E;
+}
+.ticket-priority {
+	padding: 15px 0 15px 0px;
+	margin: 5px;
+}
+
+.ticket-columns {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	align-content: center;
+	text-align: center;
+	padding-left: 15em;
+
+}
+
+/*
+.ticket-columns > .col {
+	width: 75%;
+	
+}
+*/
+
+@media (min-width: 599px) {
+	.ticket-columns > .col {
+		width: 25% !important;
+	}
+}
+
+.ticket button {
+	color: #ffffff;
+	background: #268CA0;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 10px;
+	margin: 5px;
+	margin-bottom: 1em;
+	margin-top: 0px;
+	width: 75%;
+	border: 2px solid  #268CA0;
+	
+}
+.ticket button:hover {
+	color: #268CA0;
+	background: #ffffff;
+	border: 2px solid  #268CA0;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: #76B548 center;
+	width: 50%;
+	text-indent: 0.01px;
+	text-overflow: "";
+	color: #FFFFFF;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 10px;
+}
+
+/*/*END "SUPPORT TICKET PAGE" CSS BELOW*/*/
+@breakpoint: 500px;
+
+/* Responsive
+==================================== */
+@media all and (max-width: @breakpoint) {
+  .Rtable--collapse  {
+    display: block;
+    > .Rtable-cell { width: 100% !important; }
+    > .Rtable-cell--foot { margin-bottom: 1em; }
+  }
+}
+
+// Non-Flex modernizer fallback
+.no-flexbox .Rtable {
+  display: block;
+  > .Rtable-cell { width: 100%; }
+  > .Rtable-cell--foot { margin-bottom: 1em; }
+}

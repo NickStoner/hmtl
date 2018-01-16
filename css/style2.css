@@ -1,0 +1,119 @@
+body {
+	margin: auto;
+	background: #28485E;
+	font-family: monospace;
+	background-image: url(images/background-ticket.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+.ticket {
+	color: #28485E;
+	width: 100%;
+	font-size: 20px;
+	margin: auto;
+	position: absolute;
+	top: 20%;
+}
+
+img {
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+	width:100px;
+	padding-top: 1em;
+}
+
+#container {
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+	border-radius: 2px;
+	box-shadow: 3px 6px 20px #252525;
+}
+
+#subjectText, #descriptionText {
+	width: 70%;
+	margin: 10px;
+	padding: 5px;
+}
+
+#descriptionText {
+	height: 148px;	
+}
+
+#priorityLabel {
+	color: #28485E;
+	font-size: 20px;
+}
+
+#priorityContainer {
+	width: 70%;
+	padding: 0% 1% 0% 1%;
+	overflow: hidden;
+	margin: auto;
+}
+
+textarea:focus, input[type="text"]:focus {
+	outline: none;
+	box-shadow: none;
+	border: 2px solid  #268CA0;
+	color: #28485E;
+}
+
+#priorityContainer #priorityLabel {
+	float: left;
+}
+
+select {
+	background: #76B548 center;
+	width: 25%;
+	text-indent: 0.01px;
+	text-overflow: "";
+	color: #FFFFFF;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 5px;
+	float: right;
+	min-width: 100px;
+}
+
+#submitTicket {
+	color: #ffffff;
+	background: #268CA0;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 10px;
+	margin: 5px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	width: 40%;
+	min-width: 200px;
+	border: 2px solid  #268CA0;
+	border-radius: 5px;
+}
+
+#submitTicket:hover {
+	color: #268CA0;
+	background: #ffffff;
+	border: 2px solid  #268CA0;
+}
+
+@media screen and (max-width: 600px) {
+	select {
+		float: left;
+		width: 100%;
+	}
+	#submitTicket {
+/*		float: left;*/
+		width: 75%;
+		min-width: 75%;
+	}
+}

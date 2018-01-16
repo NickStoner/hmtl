@@ -1,0 +1,53 @@
+/*DEREK HELLO THERE*/
+
+body {
+	padding: 0 2em 0 2em;
+	background: #28485E;
+	font-family: monospace;
+}
+
+.ticket {
+	color: #28485E;
+	background: #FFFFFF;
+	width:100%;
+	font-size: 20px;
+	padding: 10px;
+	
+}
+
+#container {
+	width: 75%;
+	border: 3px solid red;
+	margin: auto;
+	text-align: center;
+}
+
+#subjectText, #descriptionText {
+	width: 70%;
+	margin: 10px;
+	padding: 5px;
+}
+
+#descriptionText {
+	height: 148px;	
+}
+
+#priorityLabel {
+	color: #28485E;
+	font-size: 20px;
+}
+
+#priorityContainer {
+	width: 50%;
+	border: 2px solid blue;
+	overflow: hidden;
+}
+
+#priorityContainer h2, #priorityContaine #ticketPriority {
+	float: left;
+}
+
+#priorityContaine #ticketPriority {
+	
+}
+
